@@ -1,0 +1,93 @@
+/* Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Card */
+h2 {
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+  padding: 24px 32px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  background: #534c4c;
+  border-radius: 12px 12px 0 0;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px 32px 32px;
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove the <br> spacing so CSS controls the layout */
+form br {
+  display: none;
+}
+
+/* Fields */
+label {
+  display: block;
+  margin: 16px 0 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+}
+
+/* Button */
+input[type="submit"] {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #667eea;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+input[type="submit"]:hover {
+  background: #5a6fd6;
+}
+
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
